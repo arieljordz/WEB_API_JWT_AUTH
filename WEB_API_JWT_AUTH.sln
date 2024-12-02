@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_API_JWT_AUTH", "WEB_API_JWT_AUTH.csproj", "{B290D7BD-E63B-4FE3-8D31-DF1CE07F70EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_API_JWT_AUTH", "WEB_API_JWT_AUTH.csproj", "{B290D7BD-E63B-4FE3-8D31-DF1CE07F70EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_API_JWT_AUTH_TEST", "..\WEB_API_JWT_AUTH_TEST\WEB_API_JWT_AUTH_TEST.csproj", "{D4012B5E-3C59-49EB-8D1F-18ECD69F8BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B290D7BD-E63B-4FE3-8D31-DF1CE07F70EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B290D7BD-E63B-4FE3-8D31-DF1CE07F70EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B290D7BD-E63B-4FE3-8D31-DF1CE07F70EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4012B5E-3C59-49EB-8D1F-18ECD69F8BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4012B5E-3C59-49EB-8D1F-18ECD69F8BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4012B5E-3C59-49EB-8D1F-18ECD69F8BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4012B5E-3C59-49EB-8D1F-18ECD69F8BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

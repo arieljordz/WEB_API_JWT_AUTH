@@ -15,11 +15,11 @@ namespace WEB_API_JWT_AUTH.Controllers
     {
         private readonly JWTDBContext db;
         private readonly IConfiguration configuration;
+
         public UsersController(JWTDBContext context, IConfiguration configuration)
         {
             this.db = context;
             this.configuration = configuration;
-
         }
 
         [HttpPost]
