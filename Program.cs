@@ -16,9 +16,18 @@ using (var random = RandomNumberGenerator.Create())
 }
 
 string secretKey = Convert.ToBase64String(secretBytes);
-    // Add services to the container.
+// Add services to the container.
 
-    builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -67,6 +76,8 @@ if (app.Environment.IsDevelopment())
 //app.MapIdentityApi<IdentityUser>();
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 

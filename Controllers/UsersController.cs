@@ -6,7 +6,6 @@ using System.Security.Claims;
 using System.Text;
 using WEB_API_JWT_AUTH.DTO;
 using WEB_API_JWT_AUTH.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WEB_API_JWT_AUTH.Controllers
 {
@@ -116,5 +115,6 @@ namespace WEB_API_JWT_AUTH.Controllers
             }
 
         }
+   
     }
 }
